@@ -1,0 +1,215 @@
+::selection {
+    color: black;
+    background: #ACE1AF;
+}
+
+body{
+    background-color: 	#E8E8E8;
+}
+
+
+.nav{
+    height: 90px;
+    width: 100%;
+    background-color: lightgreen;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;    
+}
+
+.nav .nav-row{
+    padding: 3px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .logo{
+    flex : 0 0 60%;
+    display: flex;
+}
+
+.nav .logo h1 {
+    margin-left : 30px;
+}
+
+.nav .logo img{
+    height: 80px;
+    width : 100px;
+    padding: 3px;
+    border-radius: 15px
+}
+
+.nav .switch-button {
+    flex: 0  0 40%;
+    display: flex;   
+    align-items: center; 
+    justify-content: center;
+}
+
+#switch-button{
+    width: auto;
+    text-transform: capitalize;
+    background-color: #00BFFF;  
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+button>a{
+    text-decoration: none;
+    color: white;
+    font-weight : 900;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.playerInputRow{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction :  column;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
+}
+
+#submit{
+    color: black;
+    font-weight: bold;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.enter-name{
+    /* outline: 2px solid purple; */
+    display: flex;
+    justify-content: center;
+    /* padding: 5px; */
+    margin: 10px;
+}
+
+form #searchbox{
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    margin-right: 8px;
+}
+
+#formID {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.playerSuggestions {
+    display: flex;
+    /* outline: 2px solid blue; */
+    justify-content:space-evenly;
+    margin: 10px;
+}
+
+#choosePlayer{
+    display: flex;
+    flex-wrap: wrap;
+    /* outline: 2px solid green; */
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
+    border-radius: 10px;
+}
+
+#choosePlayer .option{
+    margin: 10px;
+}
+
+#choosePlayer button {
+    /* padding: 10px; */
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.content {
+    margin: 30px;
+}
+
+
+.content .battingrow {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
+}
+
+.content .bowlingrow{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 2px 2px 2px 2px;
+}
+
+
+.content h2{
+    margin-top : 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius : 10px;
+    width:fit-content;
+    padding: 10px;
+    font-weight :normal;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px  2px 2px;
+    background-color: #F0F0F0 ;
+}
+
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom : 10px;
+    width: 100%;
+}
+
+td{
+    /* border: 1px solid black; */
+    text-align: center;
+    background-color: #F0F0F0;
+}
+
+th{
+    text-align: center;
+    background-color: #D0D0D0;
+    text-transform: capitalize;
+}
+
+.content .profilePic {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.content .profilePic #playerdp{
+    justify-self: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.notfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: red 2px solid ; */
+    margin:10px;
+}
+.notfound p {
+    color: #cc0000;
+}
+
+.hidden {
+    display: none !important;
+}

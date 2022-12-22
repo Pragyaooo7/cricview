@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cricket Visualizer </title>
+    <link rel="stylesheet" href="a.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- this is the outermost container -->
+        <!-- navbar starts -->
+        <div class="nav">
+            <!--  -->
+            <!-- now it will have  a row that has 2 columns -->
+            <!-- container will be flex box  -->
+            <!-- first col will have logo -->
+            <!-- second col will have a link to go to compare players page  -->
+            <div class="nav-row">
+                <div class="logo">
+                    <a href="index.html"> <img src="logo.jpg" alt=""> </a>
+                    <h1> Cricket Visualizer </h1>
+                </div>
+                <div class="switch-button">
+                    <button id="switch-button" >
+                        <a href="index2.html"> COMPARE PLAYER PROFILES </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- player input row starterd -->
+        <div class="playerInputRow">
+            <div class="enter-name">
+                <!-- form to input the name of player -->
+                <form action="" id="formID">
+                    <input type="text" name="name" id="searchbox" placeholder="Search Player" required>
+                    <button id="submit"> SEARCH </button>
+                </form>
+            </div>
+
+            <div class="playerSuggestions">
+                <div id="choosePlayer">
+                    <!-- we will populate it later when we have multiple layer name in search -->
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="notfound">
+                <p>Could'nt Find the Player</p>
+            </div>
+
+        </div>
+        <!-- player input row end -->
+
+        <div class="content hidden">
+
+            <div class="profilePic">
+                <img id="playerdp" src="" alt="">
+            </div>
+
+            <h2>Batting Career Statistics</h2>
+            <div class="battingrow">
+                <table id="battingTable">
+                    <tr class="heading">
+                        <th> </th>
+                        <th>matches</th>
+                        <th>innings</th>
+                        <th>NO</th>
+                        <th>runs</th>
+                        <th>Highest Score</th>
+                        <th>Average</th>
+                        <th>Strike Rate</th>
+                        <th>200</th>
+                        <th>100</th> 
+                        <th>50</th>
+                        <th>4s</th>
+                        <th>6s</th>
+                    </tr>
+
+                    <tr class="test batting" id="testBattingRow">
+                        <td class="test"> TEST </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="no"> </td>
+                        <td class="runs"> </td>
+                        <td class="hs"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr"> </td>
+                        <td class="200s"> </td>
+                        <td class="100s"> </td>
+                        <td class="50s"> </td>
+                        <td class="4s"> </td>
+                        <td class="6s"> </td>
+                    </tr>
+
+                    <tr class="odi batting" id="odiBattingRow">
+                        <td class="odi"> ODI </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="no"> </td>
+                        <td class="runs"> </td>
+                        <td class="hs"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr"> </td>
+                        <td class="200s"> </td>
+                        <td class="100s"> </td>
+                        <td class="50s"> </td>
+                        <td class="4s"> </td>
+                        <td class="6s"> </td>
+                    </tr>
+
+                    <tr class="t20i batting" id="t20iBattingRow">
+                        <td class="t20i"> T20I </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="no"> </td>
+                        <td class="runs"> </td>
+                        <td class="hs"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr"> </td>
+                        <td class="200s"> </td>
+                        <td class="100s"> </td>
+                        <td class="50s"> </td>
+                        <td class="4s"> </td>
+                        <td class="6s"> </td>
+                    </tr>
+
+                    <tr class="ipl batting" id="iplBattingRow">
+                        <td class="ipl"> IPL </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="no"> </td>
+                        <td class="runs"> </td>
+                        <td class="hs"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr"> </td>
+                        <td class="200s"> </td>
+                        <td class="100s"> </td>
+                        <td class="50s"> </td>
+                        <td class="4s"> </td>
+                        <td class="6s"> </td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Bowling Career Statistics</h2>
+            <div class="bowlingrow">
+                <table id="bowlingTable">
+                    <tr class= "heading">
+                        <th> </th>
+                        <th>Matches</th>
+                        <th>innings</th>
+                        <th>Wickets</th>
+                        <th>Average</th>
+                        <th>Strike Rate</th>
+                        <th>Economy</th>
+                        <th>BBI</th>
+                        <th>BBM</th>
+                        <th>5W</th>
+                        <th>10W</th>
+                    </tr>
+
+                    <tr class= "test bowling" id="testBowlingRow">
+                        <td class="test"> TEST </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="wkts"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr">   </td>
+                        <td class="econ"> </td>
+                        <td class="bbi"> </td>
+                        <td class="bbm"> </td>
+                        <td class="5w"> </td>
+                        <td class="10w"> </td>
+                    </tr>
+
+                    <tr class= "odi bowling" id="odiBowlingRow">
+                        <td class="odi"> ODI </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="wkts"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr">   </td>
+                        <td class="econ"> </td>
+                        <td class="bbi"> </td>
+                        <td class="bbm"> </td>
+                        <td class="5w"> </td>
+                        <td class="10w"> </td>
+                    </tr>
+                    
+                    <tr class= "t20i bowling" id="t20iBowlingRow">
+                        <td class="t20i"> T20I </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="wkts"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr">   </td>
+                        <td class="econ"> </td>
+                        <td class="bbi"> </td>
+                        <td class="bbm"> </td>
+                        <td class="5w"> </td>
+                        <td class="10w"> </td>
+                    </tr>
+
+                    <tr class= "ipl bowling" id="iplBowlingRow">
+                        <td class="ipl"> IPL </td>
+                        <td class="m"> </td>
+                        <td class="inn"> </td>
+                        <td class="wkts"> </td>
+                        <td class="avg"> </td>
+                        <td class="sr">   </td>
+                        <td class="econ"> </td>
+                        <td class="bbi"> </td>
+                        <td class="bbm"> </td>
+                        <td class="5w"> </td>
+                        <td class="10w"> </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="a.js"></script>
+</body>
+
+</html>

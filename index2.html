@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cricket Visualizer </title>
+    <link rel="stylesheet" href="b.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="nav-row">
+            <div class="logo">
+                <a href="index.html"> <img src="logo.jpg" alt=""> </a>
+                <h1> Cricket Visualizer </h1>
+            </div>
+            <div class="switch-button">
+                <button id="switch-button">
+                    <a href="index.html"> VIEW PLAYER PROFILE </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentcompare">
+        <div class="inputrowcompare">
+
+            <div class="inputplayercompare">
+                <div class="card">
+                    <form action="" id="formIDcompare1">
+                        <input type="text" name="name" id="searchbox_compare_1" placeholder="Enter Player 1 name"
+                            required>
+                        <button id="submit_compare_1"> SEARCH </button>
+                    </form>
+                    <div id="playersuggestioncompare1">
+                        <!-- populate using javascript dom -->
+                    </div>
+                    <div id="notfound1">
+                        <p>player not found</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inputplayercompare">
+                <div class="card">
+                    <form action="" id="formIDcompare2">
+                        <input type="text" name="name" id="searchbox_compare_2" placeholder="Enter Player 2 name"
+                            required>
+                        <button id="submit_compare_2"> SEARCH </button>
+                    </form>
+                    <div id="playersuggestioncompare2">
+                        <!-- populate using javascript dom -->
+                    </div>
+                    <div id="notfound2">
+                        <p>player not found</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="startrow">
+            <button class="startcompare">
+                compare
+            </button>
+        </div>
+
+        <div class="main-content">
+            <!-- yaha graphs wagera ayenge -->
+            <h2>batting comparison</h2>
+            <div class="battingrow">
+                <div class="graphCard">
+                    <div id="battingchart_divm" class="m"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="battingchart_divruns" class="runs"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="battingchart_divavg" class="avg"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="battingchart_divsr" class="sr"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="battingchart_div100s" class="100s"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="battingchart_div50s" class="50s"></div>
+                </div>
+            </div>
+
+            <h2>Bowling Comparison</h2>
+            <div class="bowlingrow">
+                <div class="graphCard">
+                    <div id="bowlingchart_divm" class="m"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="bowlingchart_divwkts" class="wkts"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="bowlingchart_divavg" class="avg"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="bowlingchart_divsr" class="sr"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="bowlingchart_divecon" class="econ"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="bowlingchart_div5w" class="5w"></div>
+                </div>
+                <div class="graphCard">
+                    <div id="bowlingchart_div10w" class="10w"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="b.js"></script>
+</body>
+
+</html>
